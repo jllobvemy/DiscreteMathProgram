@@ -1,0 +1,39 @@
+﻿<Window x:Class="UIdesign.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UIdesign"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="{x:Null}"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="{x:Null}" MouseMove="MainWindow_OnMouseMove" >
+        <Border Background="#FF423F3F" CornerRadius="20,20,20,20" Margin="5, 5, 5, 5">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="10" Color="Black"></DropShadowEffect>
+            </Border.Effect>        
+        </Border>
+        <Button Click="OrButton_OnClick" Name="OrButton" Content="∨" HorizontalAlignment="Left" Height="44" Margin="98,315,0,0" VerticalAlignment="Top" Width="41" Background="#FFFFD280" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="ExitButton_OnClick" Name="ExitButton" Content="退出" HorizontalAlignment="Left" Height="44" Margin="157,243,0,0" VerticalAlignment="Top" Width="80" Background="#FFEE8282" FontSize="24" Foreground="Black" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="AcButton_OnClick" Name="AcButton"  Content="AC" HorizontalAlignment="Left" Height="44" Margin="263,243,0,0" VerticalAlignment="Top" Width="80" Background="#FFEE8282" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="SingleAButton_OnClick" Name="SingleAButton" Content="→" HorizontalAlignment="Left" Height="44" Margin="59,381,0,0" VerticalAlignment="Top" Width="80" Background="#FFFFD280" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="NotButton_OnClick" Name="NotButton" Content="┐" HorizontalAlignment="Left" Height="44" Margin="59,243,0,0" VerticalAlignment="Top" Width="80" Background="#FFFFD280" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="AnsDisButton_OnClick" Name="AnsDisButton" Content="主析取范式" HorizontalAlignment="Left" Height="44" Margin="263,315,0,0" VerticalAlignment="Top" Width="80" Background="#FF80F3FF" FontSize="14" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="AndButton_OnClick" Name="AndButton" Content="∧" HorizontalAlignment="Left" Height="44" Margin="59,315,0,0" VerticalAlignment="Top" Width="39" Background="#FFFFD280" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="AnsConButton_OnClick" Name="AnsConButton" Content="主合取范式" HorizontalAlignment="Left" Height="44" Margin="263,381,0,0" VerticalAlignment="Top" Width="80" Background="#FF80F3FF" FontSize="14" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="RBracketButton_OnClick" Name="RBracketButton" Content=")" HorizontalAlignment="Left" Height="44" Margin="196,315,0,0" VerticalAlignment="Top" Width="41" Background="#FFFFD280" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+        <Button Click="LBracketButton_OnClick" Name="LBracketButton" Content="(" HorizontalAlignment="Left" Height="44" Margin="157,315,0,0" VerticalAlignment="Top" Width="39" Background="#FFFFD280" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+
+        <TextBox MouseMove="AnswerBlock_OnMouseMove" VerticalScrollBarVisibility="Auto" IsReadOnly="True" Name="AnswerBlock" HorizontalAlignment="Left" Height="112" Margin="59,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" FontSize="12" Background="#FF666666" Foreground="White" />
+        <Label Name="TitleLabel" Content="主析取/主合取范式计算器" HorizontalAlignment="Left" Height="44" Margin="59,10,0,0" VerticalAlignment="Top" Width="302" FontSize="24" Foreground="#FFBFBF82"/>
+        <Button Click="DoubleAButton_OnClick" Name="DoubleAButton" Content="⇄" HorizontalAlignment="Left" Height="44" Margin="157,381,0,0" VerticalAlignment="Top" Width="80" Background="#FFFFD280" FontSize="24" BorderBrush="White" BorderThickness="3"/>
+        <Label Name="AuthorLabel" Content="Made by B19031327" HorizontalAlignment="Left" Height="26" Margin="263,466,0,0" VerticalAlignment="Top" Width="129"/>
+        <TextBlock Name="HelpTextBlock" HorizontalAlignment="Left" Height="31" Margin="10,451,0,0" TextWrapping="Wrap" Text="只允许输入大写字母以及列举出的关系连接词" VerticalAlignment="Top" Width="227" Background="#FF423F3F"  Foreground="White"/>
+        <TextBox MouseMove="ExpressionBox_OnMouseMove" PreviewKeyDown="ExpressionBox_OnPreviewKeyDown" Name="ExpressionBox" HorizontalAlignment="Left" Height="49" Margin="59,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" FontSize="18" Background="#FF948C8C" CharacterCasing="Upper" InputMethod.IsInputMethodEnabled="False"/>
+
+
+    </Grid>
+</Window>

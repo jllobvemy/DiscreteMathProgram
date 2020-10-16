@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiscreteMathProgram_0", "DiscreteMathProgram_0\DiscreteMathProgram_0.vcxproj", "{BC4E7EFA-C729-4D00-B4C5-80B58573F24D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIdesign", "UIdesign\UIdesign.csproj", "{406A1B64-19AE-4BC1-8BAE-9C989E6A1968}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC4E7EFA-C729-4D00-B4C5-80B58573F24D} = {BC4E7EFA-C729-4D00-B4C5-80B58573F24D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC4E7EFA-C729-4D00-B4C5-80B58573F24D}.Debug|x64.ActiveCfg = Debug|x64
+		{BC4E7EFA-C729-4D00-B4C5-80B58573F24D}.Debug|x64.Build.0 = Debug|x64
+		{BC4E7EFA-C729-4D00-B4C5-80B58573F24D}.Release|x64.ActiveCfg = Release|x64
+		{BC4E7EFA-C729-4D00-B4C5-80B58573F24D}.Release|x64.Build.0 = Release|x64
+		{406A1B64-19AE-4BC1-8BAE-9C989E6A1968}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{406A1B64-19AE-4BC1-8BAE-9C989E6A1968}.Debug|x64.Build.0 = Debug|Any CPU
+		{406A1B64-19AE-4BC1-8BAE-9C989E6A1968}.Release|x64.ActiveCfg = Release|Any CPU
+		{406A1B64-19AE-4BC1-8BAE-9C989E6A1968}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4A49797-F0DA-4C13-A098-37FB377F2B60}
+	EndGlobalSection
+EndGlobal
